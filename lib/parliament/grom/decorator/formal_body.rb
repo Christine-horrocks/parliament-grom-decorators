@@ -13,6 +13,13 @@ module Parliament
           @name ||= respond_to?(:formalBodyName) ? formalBodyName : ''
         end
 
+        # Checks if Grom::Node has a chair.
+        #
+        # @return [Boolean] a boolean depending on whether or not the Grom::Node is chair.
+        def is_chair?
+          respond_to?(:formalBodyHasFormalBodyChair) 
+        end  
+
         # Alias formalBodyStartDate with fallback.
         #
         # @return [DateTime, nil] the start date of the Grom::Node or nil.
@@ -33,6 +40,20 @@ module Parliament
         def current?
           end_date.nil?
         end
+
+        # Checks if Grom::Node is joint.
+        #
+        # @return [Boolean] a boolean depending on whether or not the Grom::Node is joint.
+        def is_joint?
+          respond_to?(:formalBodyHasLeadHouse)
+        end
+
+        # Checks if Grom::Node has a remit.
+        #
+        # @return [String, String] a string depending on whether or not the Grom::Node has a remit.
+        def remit
+          @remit ||= respond_to?(:formalBodyRemit) ? formalBodyRemit : ''
+        end 
       end
     end
   end
