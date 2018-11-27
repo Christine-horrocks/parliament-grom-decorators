@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3030/api/v1/statutory_instrument_by_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+      Accept:
+      - "*/*"
+      - application/n-triples
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/n-triples
+      Content-Disposition:
+      - inline; filename="index"
+      Last-Modified:
+      - Mon, 26 Nov 2018 13:09:04 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '5517'
+    body:
+      encoding: UTF-8
+      string: |
+        <https://id.parliament.uk/DGMmHxFe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/StatutoryInstrumentPaper> .
+        <https://id.parliament.uk/DGMmHxFe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/WorkPackagedThing> .
+        <https://id.parliament.uk/DGMmHxFe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/LaidThing> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperYear> "2018"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperPrefix> "SI" .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperNumber> "1116"^^<http://www.w3.org/2001/XMLSchema#integer> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperName> "Childcare (Miscellaneous Amendments) (EU Exit) (England) Regulations 2018" .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperComingIntoForceDate> "2019-03-29+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/statutoryInstrumentPaperMadeDate> "2018-10-24+01:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/workPackagedThingHasWorkPackagedThingWebLink> <http://www.legislation.gov.uk/uksi/2018/1116/made> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/laidThingHasLaying> <https://id.parliament.uk/RfTIhCit> .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/workPackagedThingHasWorkPackage> <https://id.parliament.uk/Fz9FAH9L> .
+        <https://id.parliament.uk/Fz9FAH9L> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/WorkPackage> .
+        <https://id.parliament.uk/Fz9FAH9L> <https://id.parliament.uk/schema/workPackageHasProcedure> <https://id.parliament.uk/5S6p4YsP> .
+        <https://id.parliament.uk/Fz9FAH9L> <https://id.parliament.uk/schema/workPackageHasBusinessItem> <https://id.parliament.uk/bBxBWi8q> .
+        <https://id.parliament.uk/bBxBWi8q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/BusinessItem> .
+        <https://id.parliament.uk/bBxBWi8q> <https://id.parliament.uk/schema/businessItemDate> "2018-12-15+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/bBxBWi8q> <https://id.parliament.uk/schema/businessItemHasProcedureStep> <https://id.parliament.uk/g8B3R2Ou> .
+        <https://id.parliament.uk/g8B3R2Ou> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ProcedureStep> .
+        <https://id.parliament.uk/g8B3R2Ou> <https://id.parliament.uk/schema/procedureStepName> "Objection period ends" .
+        <https://id.parliament.uk/RfTIhCit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Laying> .
+        <https://id.parliament.uk/RfTIhCit> <https://id.parliament.uk/schema/layingDate> "2018-11-07+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/RfTIhCit> <https://id.parliament.uk/schema/layingHasLayingBody> <https://id.parliament.uk/7dSvuueH> .
+        <https://id.parliament.uk/5S6p4YsP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Procedure> .
+        <https://id.parliament.uk/5S6p4YsP> <https://id.parliament.uk/schema/procedureName> "Made negative" .
+        <https://id.parliament.uk/7dSvuueH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Group> .
+        <https://id.parliament.uk/7dSvuueH> <https://id.parliament.uk/schema/groupName> "Department for Education" .
+        <https://id.parliament.uk/DGMmHxFe> <https://id.parliament.uk/schema/laidThingHasLaying> <https://id.parliament.uk/Bi2fZUC5> .
+        <https://id.parliament.uk/Bi2fZUC5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Laying> .
+        <https://id.parliament.uk/Bi2fZUC5> <https://id.parliament.uk/schema/layingDate> "2018-12-02+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/Bi2fZUC5> <https://id.parliament.uk/schema/layingHasLayingBody> <https://id.parliament.uk/7dSvuueH> .
+
+    http_version:
+  recorded_at: Mon, 26 Nov 2018 13:15:52 GMT
+recorded_with: VCR 3.0.3

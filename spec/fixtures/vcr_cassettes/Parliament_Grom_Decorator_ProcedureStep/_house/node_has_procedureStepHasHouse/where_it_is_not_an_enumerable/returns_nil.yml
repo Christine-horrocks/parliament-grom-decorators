@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3030/api/v1/proposed_negative_statutory_instrument_by_id
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Ruby
+      Accept:
+      - "*/*"
+      - application/n-triples
+      Expect:
+      - ''
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/n-triples
+      Content-Disposition:
+      - inline; filename="index"
+      Last-Modified:
+      - Mon, 26 Nov 2018 13:05:39 GMT
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '4945'
+    body:
+      encoding: UTF-8
+      string: |
+        <https://id.parliament.uk/FMQD5WPe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ProposedNegativeStatutoryInstrumentPaper> .
+        <https://id.parliament.uk/FMQD5WPe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/WorkPackagedThing> .
+        <https://id.parliament.uk/FMQD5WPe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/LaidThing> .
+        <https://id.parliament.uk/FMQD5WPe> <https://id.parliament.uk/schema/proposedNegativeStatutoryInstrumentPaperName> "Air Quality (Amendment of Domestic Regulations) (EU Exit) Regulations 2018" .
+        <https://id.parliament.uk/FMQD5WPe> <https://id.parliament.uk/schema/workPackagedThingHasWorkPackagedThingWebLink> <https://www.gov.uk/eu-withdrawal-act-2018-statutory-instruments/the-air-quality-amendment-of-domestic-regulations-eu-exit-regulations-2018> .
+        <https://id.parliament.uk/FMQD5WPe> <https://id.parliament.uk/schema/laidThingHasLaying> <https://id.parliament.uk/m3PHRcWO> .
+        <https://id.parliament.uk/FMQD5WPe> <https://id.parliament.uk/schema/workPackagedThingHasWorkPackage> <https://id.parliament.uk/JDUfxIyI> .
+        <https://id.parliament.uk/JDUfxIyI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/WorkPackage> .
+        <https://id.parliament.uk/JDUfxIyI> <https://id.parliament.uk/schema/workPackageHasProcedure> <https://id.parliament.uk/iCdMN1MW> .
+        <https://id.parliament.uk/m3PHRcWO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Laying> .
+        <https://id.parliament.uk/m3PHRcWO> <https://id.parliament.uk/schema/layingDate> "2018-11-22+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/m3PHRcWO> <https://id.parliament.uk/schema/layingHasLayingBody> <https://id.parliament.uk/5LQ5Ar74> .
+        <https://id.parliament.uk/m3PHRcWO> <https://id.parliament.uk/schema/businessItemHasProcedureStep> <https://id.parliament.uk/cspzmb6w> .
+        <https://id.parliament.uk/cspzmb6w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ProcedureStep> .
+        <https://id.parliament.uk/iCdMN1MW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Procedure> .
+        <https://id.parliament.uk/iCdMN1MW> <https://id.parliament.uk/schema/procedureName> "Proposed negative statutory instrument" .
+        <https://id.parliament.uk/5LQ5Ar74> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Group> .
+        <https://id.parliament.uk/5LQ5Ar74> <https://id.parliament.uk/schema/groupName> "Department for Environment, Food and Rural Affairs" .
+        <https://id.parliament.uk/FMQD5WPe> <https://id.parliament.uk/schema/laidThingHasLaying> <https://id.parliament.uk/moMsMCQZ> .
+        <https://id.parliament.uk/moMsMCQZ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/Laying> .
+        <https://id.parliament.uk/moMsMCQZ> <https://id.parliament.uk/schema/layingDate> "2018-11-22+00:00"^^<http://www.w3.org/2001/XMLSchema#date> .
+        <https://id.parliament.uk/moMsMCQZ> <https://id.parliament.uk/schema/layingHasLayingBody> <https://id.parliament.uk/5LQ5Ar74> .
+        <https://id.parliament.uk/moMsMCQZ> <https://id.parliament.uk/schema/businessItemHasProcedureStep> <https://id.parliament.uk/puVMaN7t> .
+        <https://id.parliament.uk/puVMaN7t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://id.parliament.uk/schema/ProcedureStep> .
+    http_version:
+  recorded_at: Mon, 26 Nov 2018 13:15:02 GMT
+recorded_with: VCR 3.0.3
